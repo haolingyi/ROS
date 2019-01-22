@@ -1,0 +1,8 @@
+prefix=/home/hly/rosWs/devel
+
+Name: rplidar_ros
+Description: Description of rplidar_ros
+Version: 1.6.0
+Cflags: 
+Libs: -L/home/hly/rosWs/devel/lib 
+Requires: 
