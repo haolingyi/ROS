@@ -7,5 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PATH="/home/hly/cartographer/install_isolated/bin:/opt/ros/melodic/bin:/home/hly/PyTorch/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+export PATH="/home/hly/cartographer/install_isolated/bin:/opt/ros/melodic/bin:/home/hly/PyTorch/anaconda3/bin:/usr/local/cuda-9.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin}"
 export PWD="/home/hly/rosWs/build"

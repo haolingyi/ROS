@@ -23,24 +23,6 @@ BUILD_GTEST:BOOL=OFF
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=ON
 
-//The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=Boost_DIR-NOTFOUND
-
-//Path to a file.
-Boost_INCLUDE_DIR:PATH=/usr/include
-
-//Boost library directory DEBUG
-Boost_LIBRARY_DIR_DEBUG:PATH=/usr/lib/x86_64-linux-gnu
-
-//Boost library directory RELEASE
-Boost_LIBRARY_DIR_RELEASE:PATH=/usr/lib/x86_64-linux-gnu
-
-//Boost system library (debug)
-Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_system.so
-
-//Boost system library (release)
-Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_system.so
-
 //List of ';' separated packages to exclude
 CATKIN_BLACKLIST_PACKAGES:STRING=
 
@@ -58,7 +40,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=xtion2_ros
+CATKIN_WHITELIST_PACKAGES:STRING=
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -266,15 +248,6 @@ NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/share/OpenCV
 
-//Path to a file.
-OpenNI2_INCLUDE_DIRS:PATH=/usr/include/openni2
-
-//Path to a library.
-OpenNI2_LIBRARIES:FILEPATH=/usr/lib/libOpenNI2.so
-
-//pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
-
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
 
@@ -300,12 +273,6 @@ UBUNTU:BOOL=TRUE
 UBUNTU_BIONIC:BOOL=TRUE
 
 //Path to a file.
-USB_10_INCLUDE_DIR:PATH=/usr/include
-
-//Path to a library.
-USB_10_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libusb-1.0.so
-
-//Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
 
 //Path to a file.
@@ -317,20 +284,14 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
-//The directory containing a CMake configuration file for camera_calibration_parsers.
-camera_calibration_parsers_DIR:PATH=/opt/ros/melodic/share/camera_calibration_parsers/cmake
-
-//The directory containing a CMake configuration file for camera_info_manager.
-camera_info_manager_DIR:PATH=/opt/ros/melodic/share/camera_info_manager/cmake
+//The directory containing a CMake configuration file for c.
+c_DIR:PATH=c_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/melodic/share/class_loader/cmake
-
-//The directory containing a CMake configuration file for cmake_modules.
-cmake_modules_DIR:PATH=/opt/ros/melodic/share/cmake_modules/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
@@ -412,7 +373,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/librospack.so
+lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -450,9 +411,6 @@ rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
 //The directory containing a CMake configuration file for roslib.
 roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
 
-//The directory containing a CMake configuration file for roslint.
-roslint_DIR:PATH=/opt/ros/melodic/share/roslint/cmake
-
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
@@ -468,6 +426,12 @@ rplidar_ros_BINARY_DIR:STATIC=/home/hly/rosWs/build/rplidar_ros
 //Value Computed by CMake
 rplidar_ros_SOURCE_DIR:STATIC=/home/hly/rosWs/src/rplidar_ros
 
+//Value Computed by CMake
+send_image_BINARY_DIR:STATIC=/home/hly/rosWs/build/send_image
+
+//Value Computed by CMake
+send_image_SOURCE_DIR:STATIC=/home/hly/rosWs/src/send_image
+
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
 
@@ -477,32 +441,11 @@ std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
 
-//Value Computed by CMake
-xtion2_ros_BINARY_DIR:STATIC=/home/hly/rosWs/build/xtion2_ros
-
-//Dependencies for the target
-xtion2_ros_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_shape;general;opencv_stitching;general;opencv_superres;general;opencv_video;general;opencv_videoio;general;opencv_videostab;general;opencv_viz;general;opencv_aruco;general;opencv_bgsegm;general;opencv_bioinspired;general;opencv_ccalib;general;opencv_datasets;general;opencv_dpm;general;opencv_face;general;opencv_freetype;general;opencv_fuzzy;general;opencv_hdf;general;opencv_line_descriptor;general;opencv_optflow;general;opencv_phase_unwrapping;general;opencv_plot;general;opencv_reg;general;opencv_rgbd;general;opencv_saliency;general;opencv_stereo;general;opencv_structured_light;general;opencv_surface_matching;general;opencv_text;general;opencv_ximgproc;general;opencv_xobjdetect;general;opencv_xphoto;general;/opt/ros/melodic/lib/libcamera_info_manager.so;general;/opt/ros/melodic/lib/libcamera_calibration_parsers.so;general;/opt/ros/melodic/lib/libcv_bridge.so;general;/usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0;general;/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0;general;/opt/ros/melodic/lib/libimage_transport.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
-
-//Value Computed by CMake
-xtion2_ros_SOURCE_DIR:STATIC=/home/hly/rosWs/src/xtion2_ros
-
 
 ########################
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: Boost_DIR
-Boost_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_INCLUDE_DIR
-Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_LIBRARY_DIR_DEBUG
-Boost_LIBRARY_DIR_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_LIBRARY_DIR_RELEASE
-Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
-Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
-Boost_SYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //catkin environment
 CATKIN_ENV:INTERNAL=/home/hly/rosWs/build/catkin_generated/env_cached.sh
 CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/hly/rosWs/build/test_results
@@ -556,6 +499,8 @@ CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//Path to cache edit program executable.
+CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/cmake-gui
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -608,7 +553,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -650,15 +595,11 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenCV
-FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v3.2.0(3.2)]
-//Details about finding OpenNI2
-FIND_PACKAGE_MESSAGE_DETAILS_OpenNI2:INTERNAL=[/usr/lib/libOpenNI2.so][/usr/include/openni2][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v3.2.0()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.15()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//Details about finding USB_10
-FIND_PACKAGE_MESSAGE_DETAILS_USB_10:INTERNAL=[/usr/lib/x86_64-linux-gnu/libusb-1.0.so][/usr/include][v()]
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
 GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
@@ -679,99 +620,10 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenNI2_LIBRARIES
-OpenNI2_LIBRARIES-ADVANCED:INTERNAL=1
-PC_OPENNI2_CFLAGS:INTERNAL=-I/usr/include/openni2
-PC_OPENNI2_CFLAGS_I:INTERNAL=
-PC_OPENNI2_CFLAGS_OTHER:INTERNAL=
-PC_OPENNI2_FOUND:INTERNAL=1
-PC_OPENNI2_INCLUDEDIR:INTERNAL=/usr/include/openni2
-PC_OPENNI2_INCLUDE_DIRS:INTERNAL=/usr/include/openni2
-PC_OPENNI2_LDFLAGS:INTERNAL=-lOpenNI2
-PC_OPENNI2_LDFLAGS_OTHER:INTERNAL=
-PC_OPENNI2_LIBDIR:INTERNAL=/usr/lib
-PC_OPENNI2_LIBRARIES:INTERNAL=OpenNI2
-PC_OPENNI2_LIBRARY_DIRS:INTERNAL=
-PC_OPENNI2_LIBS:INTERNAL=
-PC_OPENNI2_LIBS_L:INTERNAL=
-PC_OPENNI2_LIBS_OTHER:INTERNAL=
-PC_OPENNI2_LIBS_PATHS:INTERNAL=
-PC_OPENNI2_PREFIX:INTERNAL=/usr
-PC_OPENNI2_STATIC_CFLAGS:INTERNAL=-I/usr/include/openni2
-PC_OPENNI2_STATIC_CFLAGS_I:INTERNAL=
-PC_OPENNI2_STATIC_CFLAGS_OTHER:INTERNAL=
-PC_OPENNI2_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/openni2
-PC_OPENNI2_STATIC_LDFLAGS:INTERNAL=-lOpenNI2
-PC_OPENNI2_STATIC_LDFLAGS_OTHER:INTERNAL=
-PC_OPENNI2_STATIC_LIBDIR:INTERNAL=
-PC_OPENNI2_STATIC_LIBRARIES:INTERNAL=OpenNI2
-PC_OPENNI2_STATIC_LIBRARY_DIRS:INTERNAL=
-PC_OPENNI2_STATIC_LIBS:INTERNAL=
-PC_OPENNI2_STATIC_LIBS_L:INTERNAL=
-PC_OPENNI2_STATIC_LIBS_OTHER:INTERNAL=
-PC_OPENNI2_STATIC_LIBS_PATHS:INTERNAL=
-PC_OPENNI2_VERSION:INTERNAL=2.2.0.3
-PC_OPENNI2_libopenni2_INCLUDEDIR:INTERNAL=
-PC_OPENNI2_libopenni2_LIBDIR:INTERNAL=
-PC_OPENNI2_libopenni2_PREFIX:INTERNAL=
-PC_OPENNI2_libopenni2_VERSION:INTERNAL=
-PC_USB_10_CFLAGS:INTERNAL=-I/usr/include/libusb-1.0
-PC_USB_10_CFLAGS_I:INTERNAL=
-PC_USB_10_CFLAGS_OTHER:INTERNAL=
-PC_USB_10_FOUND:INTERNAL=1
-PC_USB_10_INCLUDEDIR:INTERNAL=/usr/include
-PC_USB_10_INCLUDE_DIRS:INTERNAL=/usr/include/libusb-1.0
-PC_USB_10_LDFLAGS:INTERNAL=-lusb-1.0
-PC_USB_10_LDFLAGS_OTHER:INTERNAL=
-PC_USB_10_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
-PC_USB_10_LIBRARIES:INTERNAL=usb-1.0
-PC_USB_10_LIBRARY_DIRS:INTERNAL=
-PC_USB_10_LIBS:INTERNAL=
-PC_USB_10_LIBS_L:INTERNAL=
-PC_USB_10_LIBS_OTHER:INTERNAL=
-PC_USB_10_LIBS_PATHS:INTERNAL=
-PC_USB_10_PREFIX:INTERNAL=/usr
-PC_USB_10_STATIC_CFLAGS:INTERNAL=-I/usr/include/libusb-1.0
-PC_USB_10_STATIC_CFLAGS_I:INTERNAL=
-PC_USB_10_STATIC_CFLAGS_OTHER:INTERNAL=
-PC_USB_10_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/libusb-1.0
-PC_USB_10_STATIC_LDFLAGS:INTERNAL=-lusb-1.0;-ludev;-pthread
-PC_USB_10_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
-PC_USB_10_STATIC_LIBDIR:INTERNAL=
-PC_USB_10_STATIC_LIBRARIES:INTERNAL=usb-1.0;udev
-PC_USB_10_STATIC_LIBRARY_DIRS:INTERNAL=
-PC_USB_10_STATIC_LIBS:INTERNAL=
-PC_USB_10_STATIC_LIBS_L:INTERNAL=
-PC_USB_10_STATIC_LIBS_OTHER:INTERNAL=
-PC_USB_10_STATIC_LIBS_PATHS:INTERNAL=
-PC_USB_10_VERSION:INTERNAL=1.0.21
-PC_USB_10_libusb-1.0_INCLUDEDIR:INTERNAL=
-PC_USB_10_libusb-1.0_LIBDIR:INTERNAL=
-PC_USB_10_libusb-1.0_PREFIX:INTERNAL=
-PC_USB_10_libusb-1.0_VERSION:INTERNAL=
-//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
-PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
-//Components requested for this build tree.
-_Boost_COMPONENTS_SEARCHED:INTERNAL=system
-//Last used Boost_INCLUDE_DIR value.
-_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/include
-//Last used Boost_LIBRARY_DIR_DEBUG value.
-_Boost_LIBRARY_DIR_DEBUG_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
-//Last used Boost_LIBRARY_DIR_RELEASE value.
-_Boost_LIBRARY_DIR_RELEASE_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
-//Last used Boost_NAMESPACE value.
-_Boost_NAMESPACE_LAST:INTERNAL=boost
-//Last used Boost_USE_MULTITHREADED value.
-_Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
-__pkg_config_arguments_PC_OPENNI2:INTERNAL=QUIET;libopenni2
-__pkg_config_arguments_PC_USB_10:INTERNAL=libusb-1.0
-__pkg_config_checked_PC_OPENNI2:INTERNAL=1
-__pkg_config_checked_PC_USB_10:INTERNAL=1
-prefix_result:INTERNAL=/usr/lib
 
