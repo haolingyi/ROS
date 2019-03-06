@@ -1,8 +1,8 @@
-# Install script for directory: /home/hly/rosWs/src/send_image
+# Install script for directory: /home/hly/Program/rosWs/src/send_image
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hly/rosWs/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hly/Program/rosWs/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hly/rosWs/build/send_image/catkin_generated/installspace/send_image.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hly/Program/rosWs/build/send_image/catkin_generated/installspace/send_image.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/send_image/cmake" TYPE FILE FILES
-    "/home/hly/rosWs/build/send_image/catkin_generated/installspace/send_imageConfig.cmake"
-    "/home/hly/rosWs/build/send_image/catkin_generated/installspace/send_imageConfig-version.cmake"
+    "/home/hly/Program/rosWs/build/send_image/catkin_generated/installspace/send_imageConfig.cmake"
+    "/home/hly/Program/rosWs/build/send_image/catkin_generated/installspace/send_imageConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/send_image" TYPE FILE FILES "/home/hly/rosWs/src/send_image/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/send_image" TYPE FILE FILES "/home/hly/Program/rosWs/src/send_image/package.xml")
 endif()
 

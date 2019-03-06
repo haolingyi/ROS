@@ -1,8 +1,8 @@
-prefix=/home/hly/rosWs/install
+prefix=/home/hly/Program/rosWs/install
 
 Name: rplidar_ros
 Description: Description of rplidar_ros
 Version: 1.6.0
 Cflags: 
-Libs: -L/home/hly/rosWs/install/lib 
+Libs: -L/home/hly/Program/rosWs/install/lib 
 Requires: 

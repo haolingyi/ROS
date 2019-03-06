@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hly/rosWs/src
+CMAKE_SOURCE_DIR = /home/hly/Program/rosWs/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hly/rosWs/build
+CMAKE_BINARY_DIR = /home/hly/Program/rosWs/build
 
 # Utility rule file for sensor_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir/build: sensor_msgs_ge
 .PHONY : send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 
 send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	cd /home/hly/rosWs/build/send_image && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/hly/Program/rosWs/build/send_image && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend:
-	cd /home/hly/rosWs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hly/rosWs/src /home/hly/rosWs/src/send_image /home/hly/rosWs/build /home/hly/rosWs/build/send_image /home/hly/rosWs/build/send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hly/Program/rosWs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hly/Program/rosWs/src /home/hly/Program/rosWs/src/send_image /home/hly/Program/rosWs/build /home/hly/Program/rosWs/build/send_image /home/hly/Program/rosWs/build/send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 

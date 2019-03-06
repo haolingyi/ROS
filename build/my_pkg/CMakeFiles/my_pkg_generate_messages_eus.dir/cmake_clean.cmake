@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_pkg_generate_messages_eus"
-  "/home/hly/rosWs/devel/share/roseus/ros/my_pkg/msg/Num.l"
-  "/home/hly/rosWs/devel/share/roseus/ros/my_pkg/srv/AddTwoInts.l"
-  "/home/hly/rosWs/devel/share/roseus/ros/my_pkg/manifest.l"
+  "/home/hly/Program/rosWs/devel/share/roseus/ros/my_pkg/msg/Num.l"
+  "/home/hly/Program/rosWs/devel/share/roseus/ros/my_pkg/srv/AddTwoInts.l"
+  "/home/hly/Program/rosWs/devel/share/roseus/ros/my_pkg/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

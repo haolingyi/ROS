@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_pkg_generate_messages_nodejs"
-  "/home/hly/rosWs/devel/share/gennodejs/ros/my_pkg/msg/Num.js"
-  "/home/hly/rosWs/devel/share/gennodejs/ros/my_pkg/srv/AddTwoInts.js"
+  "/home/hly/Program/rosWs/devel/share/gennodejs/ros/my_pkg/msg/Num.js"
+  "/home/hly/Program/rosWs/devel/share/gennodejs/ros/my_pkg/srv/AddTwoInts.js"
 )
 
 # Per-language clean rules from dependency scanning.

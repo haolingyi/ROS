@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hly/rosWs/src
+CMAKE_SOURCE_DIR = /home/hly/Program/rosWs/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hly/rosWs/build
+CMAKE_BINARY_DIR = /home/hly/Program/rosWs/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ my_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build: rosgraph_msg
 .PHONY : my_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 
 my_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/hly/rosWs/build/my_pkg && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/hly/Program/rosWs/build/my_pkg && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : my_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 my_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/hly/rosWs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hly/rosWs/src /home/hly/rosWs/src/my_pkg /home/hly/rosWs/build /home/hly/rosWs/build/my_pkg /home/hly/rosWs/build/my_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hly/Program/rosWs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hly/Program/rosWs/src /home/hly/Program/rosWs/src/my_pkg /home/hly/Program/rosWs/build /home/hly/Program/rosWs/build/my_pkg /home/hly/Program/rosWs/build/my_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : my_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 

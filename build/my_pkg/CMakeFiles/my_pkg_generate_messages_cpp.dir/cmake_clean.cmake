@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_pkg_generate_messages_cpp"
-  "/home/hly/rosWs/devel/include/my_pkg/Num.h"
-  "/home/hly/rosWs/devel/include/my_pkg/AddTwoInts.h"
+  "/home/hly/Program/rosWs/devel/include/my_pkg/Num.h"
+  "/home/hly/Program/rosWs/devel/include/my_pkg/AddTwoInts.h"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -262,7 +262,7 @@ if __name__ == '__main__':
             sys.exit(1)
 
         # environment at generation time
-        CMAKE_PREFIX_PATH = '/home/hly/cartographer/install_isolated;/home/hly/rosWs/devel;/opt/ros/melodic;/home/hly/PyTorch/anaconda3/bin'.split(';')
+        CMAKE_PREFIX_PATH = '/home/hly/Program/rosWs/devel;/opt/ros/melodic'.split(';')
         # prepend current workspace if not already part of CPP
         base_path = os.path.dirname(__file__)
         if base_path not in CMAKE_PREFIX_PATH:

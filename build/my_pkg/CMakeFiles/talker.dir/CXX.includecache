@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/hly/rosWs/src/my_pkg/src/talker.cpp
+/home/hly/Program/rosWs/src/my_pkg/src/talker.cpp
 ros/ros.h
-/home/hly/rosWs/src/my_pkg/src/ros/ros.h
+/home/hly/Program/rosWs/src/my_pkg/src/ros/ros.h
 std_msgs/String.h
-/home/hly/rosWs/src/my_pkg/src/std_msgs/String.h
+/home/hly/Program/rosWs/src/my_pkg/src/std_msgs/String.h
 sstream
 -
 
