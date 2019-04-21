@@ -2,5 +2,6 @@
     "files.associations": {
         "*.py": "python",
         "*.tcc": "cpp"
-    }
+    },
+    "python.pythonPath": "/home/hly/Softword/Anaconda/envs/torch/bin/python"
 }
