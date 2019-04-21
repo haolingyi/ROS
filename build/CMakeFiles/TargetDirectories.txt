@@ -75,6 +75,7 @@
 /home/hly/Program/rosWs/build/my_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/hly/Program/rosWs/build/my_pkg/CMakeFiles/rebuild_cache.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/install/strip.dir
+/home/hly/Program/rosWs/build/send_image/CMakeFiles/install/local.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/sensor_msgs_generate_messages_py.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
@@ -84,8 +85,8 @@
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/rebuild_cache.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/geometry_msgs_generate_messages_py.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+/home/hly/Program/rosWs/build/send_image/CMakeFiles/show_camera.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/test.dir
-/home/hly/Program/rosWs/build/send_image/CMakeFiles/install/local.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/edit_cache.dir
 /home/hly/Program/rosWs/build/send_image/CMakeFiles/geometry_msgs_generate_messages_eus.dir

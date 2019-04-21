@@ -12,8 +12,10 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   image_transport
   cv_bridge
+  sensor_msgs
 )
 find_package(OpenCV REQUIRED)
+FIND_PACKAGE(TurboJPEG REQUIRED)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
@@ -125,6 +127,9 @@ include_directories(
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/send_image.cpp
 # )
+
+add_executable(show_camera src/show_camera.cpp)
+target_link_libraries(show_camera ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries

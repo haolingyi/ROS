@@ -1186,7 +1186,7 @@ clean: my_pkg/CMakeFiles/my_pkg_geneus.dir/clean
 my_pkg/CMakeFiles/talker.dir/all: my_pkg/CMakeFiles/my_pkg_generate_messages_cpp.dir/all
 	$(MAKE) -f my_pkg/CMakeFiles/talker.dir/build.make my_pkg/CMakeFiles/talker.dir/depend
 	$(MAKE) -f my_pkg/CMakeFiles/talker.dir/build.make my_pkg/CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hly/Program/rosWs/build/CMakeFiles --progress-num=40,41 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hly/Program/rosWs/build/CMakeFiles --progress-num=42,43 "Built target talker"
 .PHONY : my_pkg/CMakeFiles/talker.dir/all
 
 # Include target in all.
@@ -1524,7 +1524,7 @@ clean: my_pkg/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 # Directory level rules for directory send_image
 
 # Convenience name for "all" pass in the directory.
-send_image/all:
+send_image/all: send_image/CMakeFiles/show_camera.dir/all
 
 .PHONY : send_image/all
 
@@ -1537,6 +1537,7 @@ send_image/clean: send_image/CMakeFiles/sensor_msgs_generate_messages_eus.dir/cl
 send_image/clean: send_image/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 send_image/clean: send_image/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 send_image/clean: send_image/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+send_image/clean: send_image/CMakeFiles/show_camera.dir/clean
 send_image/clean: send_image/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 send_image/clean: send_image/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 
@@ -1800,6 +1801,43 @@ send_image/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: send_image/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target send_image/CMakeFiles/show_camera.dir
+
+# All Build rule for target.
+send_image/CMakeFiles/show_camera.dir/all:
+	$(MAKE) -f send_image/CMakeFiles/show_camera.dir/build.make send_image/CMakeFiles/show_camera.dir/depend
+	$(MAKE) -f send_image/CMakeFiles/show_camera.dir/build.make send_image/CMakeFiles/show_camera.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hly/Program/rosWs/build/CMakeFiles --progress-num=40,41 "Built target show_camera"
+.PHONY : send_image/CMakeFiles/show_camera.dir/all
+
+# Include target in all.
+all: send_image/CMakeFiles/show_camera.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+send_image/CMakeFiles/show_camera.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hly/Program/rosWs/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 send_image/CMakeFiles/show_camera.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hly/Program/rosWs/build/CMakeFiles 0
+.PHONY : send_image/CMakeFiles/show_camera.dir/rule
+
+# Convenience name for target.
+show_camera: send_image/CMakeFiles/show_camera.dir/rule
+
+.PHONY : show_camera
+
+# clean rule for target.
+send_image/CMakeFiles/show_camera.dir/clean:
+	$(MAKE) -f send_image/CMakeFiles/show_camera.dir/build.make send_image/CMakeFiles/show_camera.dir/clean
+.PHONY : send_image/CMakeFiles/show_camera.dir/clean
+
+# clean rule for target.
+clean: send_image/CMakeFiles/show_camera.dir/clean
 
 .PHONY : clean
 

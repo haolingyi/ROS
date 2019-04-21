@@ -266,6 +266,9 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 //Enable debian style python package layout
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
+//The directory containing a CMake configuration file for TurboJPEG.
+TurboJPEG_DIR:PATH=TurboJPEG_DIR-NOTFOUND
+
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
 
@@ -370,7 +373,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/melodic/lib/libcv_bridge.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -408,6 +411,9 @@ rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
 //The directory containing a CMake configuration file for roslib.
 roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
 
+//The directory containing a CMake configuration file for rosopencv.
+rosopencv_DIR:PATH=rosopencv_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
@@ -426,11 +432,19 @@ rplidar_ros_SOURCE_DIR:STATIC=/home/hly/Program/rosWs/src/rplidar_ros
 //Value Computed by CMake
 send_image_BINARY_DIR:STATIC=/home/hly/Program/rosWs/build/send_image
 
+send_image_DIR:PATH=
+
 //Value Computed by CMake
 send_image_SOURCE_DIR:STATIC=/home/hly/Program/rosWs/src/send_image
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+show_camera_BINARY_DIR:STATIC=/home/hly/Program/rosWs/build/send_image
+
+//Value Computed by CMake
+show_camera_SOURCE_DIR:STATIC=/home/hly/Program/rosWs/src/send_image
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -548,7 +562,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

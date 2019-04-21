@@ -805,6 +805,19 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named show_camera
+
+# Build rule for target.
+show_camera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 show_camera
+.PHONY : show_camera
+
+# fast build rule for target.
+show_camera/fast:
+	$(MAKE) -f send_image/CMakeFiles/show_camera.dir/build.make send_image/CMakeFiles/show_camera.dir/build
+.PHONY : show_camera/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -918,6 +931,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... show_camera"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... rplidarNodeClient"

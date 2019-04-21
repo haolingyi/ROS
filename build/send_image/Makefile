@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -89,18 +101,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -288,6 +288,21 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+send_image/CMakeFiles/show_camera.dir/rule:
+	cd /home/hly/Program/rosWs/build && $(MAKE) -f CMakeFiles/Makefile2 send_image/CMakeFiles/show_camera.dir/rule
+.PHONY : send_image/CMakeFiles/show_camera.dir/rule
+
+# Convenience name for target.
+show_camera: send_image/CMakeFiles/show_camera.dir/rule
+
+.PHONY : show_camera
+
+# fast build rule for target.
+show_camera/fast:
+	cd /home/hly/Program/rosWs/build && $(MAKE) -f send_image/CMakeFiles/show_camera.dir/build.make send_image/CMakeFiles/show_camera.dir/build
+.PHONY : show_camera/fast
+
+# Convenience name for target.
 send_image/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/hly/Program/rosWs/build && $(MAKE) -f CMakeFiles/Makefile2 send_image/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : send_image/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
@@ -317,6 +332,33 @@ geometry_msgs_generate_messages_eus/fast:
 	cd /home/hly/Program/rosWs/build && $(MAKE) -f send_image/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make send_image/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
+src/show_camera.o: src/show_camera.cpp.o
+
+.PHONY : src/show_camera.o
+
+# target to build an object file
+src/show_camera.cpp.o:
+	cd /home/hly/Program/rosWs/build && $(MAKE) -f send_image/CMakeFiles/show_camera.dir/build.make send_image/CMakeFiles/show_camera.dir/src/show_camera.cpp.o
+.PHONY : src/show_camera.cpp.o
+
+src/show_camera.i: src/show_camera.cpp.i
+
+.PHONY : src/show_camera.i
+
+# target to preprocess a source file
+src/show_camera.cpp.i:
+	cd /home/hly/Program/rosWs/build && $(MAKE) -f send_image/CMakeFiles/show_camera.dir/build.make send_image/CMakeFiles/show_camera.dir/src/show_camera.cpp.i
+.PHONY : src/show_camera.cpp.i
+
+src/show_camera.s: src/show_camera.cpp.s
+
+.PHONY : src/show_camera.s
+
+# target to generate assembly for a file
+src/show_camera.cpp.s:
+	cd /home/hly/Program/rosWs/build && $(MAKE) -f send_image/CMakeFiles/show_camera.dir/build.make send_image/CMakeFiles/show_camera.dir/src/show_camera.cpp.s
+.PHONY : src/show_camera.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -324,6 +366,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_cpp"
@@ -333,13 +376,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... show_camera"
 	@echo "... test"
-	@echo "... install/local"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... edit_cache"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... list_install_components"
 	@echo "... install"
+	@echo "... src/show_camera.o"
+	@echo "... src/show_camera.i"
+	@echo "... src/show_camera.s"
 .PHONY : help
 
 
