@@ -73,38 +73,47 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hly/Program/rosWs/install/setup.bash")
+   "/home/hly/Program/rosWs/install/setup.bash;/home/hly/Program/rosWs/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hly/Program/rosWs/install" TYPE FILE FILES "/home/hly/Program/rosWs/build/catkin_generated/installspace/setup.bash")
+file(INSTALL DESTINATION "/home/hly/Program/rosWs/install" TYPE FILE FILES
+    "/home/hly/Program/rosWs/build/catkin_generated/installspace/setup.bash"
+    "/home/hly/Program/rosWs/build/catkin_generated/installspace/local_setup.bash"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hly/Program/rosWs/install/setup.sh")
+   "/home/hly/Program/rosWs/install/setup.sh;/home/hly/Program/rosWs/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hly/Program/rosWs/install" TYPE FILE FILES "/home/hly/Program/rosWs/build/catkin_generated/installspace/setup.sh")
+file(INSTALL DESTINATION "/home/hly/Program/rosWs/install" TYPE FILE FILES
+    "/home/hly/Program/rosWs/build/catkin_generated/installspace/setup.sh"
+    "/home/hly/Program/rosWs/build/catkin_generated/installspace/local_setup.sh"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/hly/Program/rosWs/install/setup.zsh")
+   "/home/hly/Program/rosWs/install/setup.zsh;/home/hly/Program/rosWs/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/hly/Program/rosWs/install" TYPE FILE FILES "/home/hly/Program/rosWs/build/catkin_generated/installspace/setup.zsh")
+file(INSTALL DESTINATION "/home/hly/Program/rosWs/install" TYPE FILE FILES
+    "/home/hly/Program/rosWs/build/catkin_generated/installspace/setup.zsh"
+    "/home/hly/Program/rosWs/build/catkin_generated/installspace/local_setup.zsh"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -122,9 +131,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/hly/Program/rosWs/build/gtest/cmake_install.cmake")
-  include("/home/hly/Program/rosWs/build/my_pkg/cmake_install.cmake")
-  include("/home/hly/Program/rosWs/build/send_image/cmake_install.cmake")
-  include("/home/hly/Program/rosWs/build/rplidar_ros/cmake_install.cmake")
 
 endif()
 

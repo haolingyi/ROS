@@ -1,8 +1,0 @@
-prefix=/home/hly/Program/rosWs/install
-
-Name: send_image
-Description: Description of send_image
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/hly/Program/rosWs/install/lib 
-Requires: 

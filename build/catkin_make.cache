@@ -1,2 +1,2 @@
-my_pkg:rplidar_ros:send_image
+
 -DCATKIN_DEVEL_PREFIX=/home/hly/Program/rosWs/devel -DCMAKE_INSTALL_PREFIX=/home/hly/Program/rosWs/install -G Unix Makefiles
